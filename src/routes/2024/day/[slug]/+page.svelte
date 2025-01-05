@@ -36,18 +36,22 @@
 
 	<div>
 		<h3>Ingredients</h3>
-		{#each data.ingredients as ingredient}
-			<p>{formatIngredient(ingredient)}</p>
-		{/each}
+		<ul>
+			{#each data.ingredients as ingredient}
+				<li>{formatIngredient(ingredient)}</li>
+			{/each}
+		</ul>
 	</div>
 
 	<br />
 
 	<div>
 		<h3>Instructions</h3>
-		{#each data.instructions as instruction}
-			<p>{instruction}</p>
-		{/each}
+		<ol>
+			{#each data.instructions as instruction}
+				<li>{instruction}</li>
+			{/each}
+		</ol>
 	</div>
 </main>
 
