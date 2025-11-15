@@ -17,10 +17,10 @@
 					<td
 						style={12 === new Date().getMonth() + 1 &&
 						rowIndex * 6 + colIndex + 1 === new Date().getDate()
-							? 'border: 1px solid red;'
+							? 'border-color: red !important;'
 							: ''}
 					>
-						<a href="{base}/2024/day/{rowIndex * 6 + colIndex + 1}">{rowIndex * 6 + colIndex + 1}</a
+						<a href="{base}/2025/day/{rowIndex * 6 + colIndex + 1}">{rowIndex * 6 + colIndex + 1}</a
 						>
 					</td>
 				{/each}
@@ -28,3 +28,15 @@
 		{/each}
 	</tbody>
 </table>
+
+<style>
+	table {
+		margin: auto;
+		border: 1px solid black;
+		padding: 0.1rem;
+	}
+	td {
+		border: 1px solid black;
+		padding: 0.5rem;
+	}
+</style>
