@@ -8,6 +8,7 @@
 </svelte:head>
 
 <h1>Advent Bakes</h1>
+<h2>2025</h2>
 
 <table>
 	<tbody>
@@ -30,6 +31,15 @@
 </table>
 
 <style>
+	h1 {
+		text-align: center;
+		margin: auto 0 0 0;
+	}
+	h2 {
+		text-align: center;
+		font-size: 1rem;
+		margin: 0 0 1rem 0;
+	}
 	table {
 		margin: auto;
 		border: 1px solid black;
@@ -38,5 +48,6 @@
 	td {
 		border: 1px solid black;
 		padding: 0.5rem;
+		text-align: center;
 	}
 </style>
