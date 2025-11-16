@@ -5,11 +5,15 @@ export const getCurrentDate = (mock?: Date) => {
 	return new Date();
 };
 
+export const rowColToDay = (row: number, col: number) => {
+	return row * 6 + col + 1;
+};
+
 export const isToday = (currentDate: Date, year: number, row: number, col: number) => {
 	return (
 		currentDate.getFullYear() === year &&
 		currentDate.getMonth() === 11 &&
-		currentDate.getDate() === row * 6 + col + 1
+		currentDate.getDate() === rowColToDay(row, col)
 	);
 };
 
@@ -23,5 +27,5 @@ export const isAfterToday = (currentDate: Date, year: number, row: number, col: 
 	if (currentDate.getMonth() < 11) {
 		return false;
 	}
-	return currentDate.getDate() < row * 6 + col + 1;
+	return currentDate.getDate() < rowColToDay(row, col);
 };
