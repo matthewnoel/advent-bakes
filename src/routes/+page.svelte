@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { getCurrentDate, isToday, isAfterToday } from '$lib/utils';
-	const mock = new Date(2025, 11, 25);
-	const date = getCurrentDate(mock);
+	// const mock = new Date(2025, 11, 25);
+	// const date = getCurrentDate(mock);
+	const date = getCurrentDate();
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
 		const styles: string[] = [];
