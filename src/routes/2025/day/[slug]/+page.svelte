@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import type { Ingredient } from '$lib/recipes';
-	import { base } from '$app/paths';
 
 	let { data }: { data: PageData } = $props();
 
@@ -23,10 +22,6 @@
 	<title>Day {data.day}</title>
 	<meta name="description" content={`Recipe for day "${data.day}" of advent baking.`} />
 </svelte:head>
-
-<nav>
-	<a href="{base}/">Back to calendar</a>
-</nav>
 
 <main>
 	<h1>{data.title}</h1>
