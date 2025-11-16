@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { getCurrentDate, isToday, isAfterToday, rowColToDay } from '$lib/utils';
+	import { DECEMBER, getCurrentDate, isToday, isAfterToday, rowColToDay } from '$lib/utils';
 	const year = 2025;
 	// const mock = new Date(2025, 11, 20);
 	// const date = getCurrentDate(mock);
@@ -45,7 +45,7 @@
 	</tbody>
 </table>
 
-{#if date.getFullYear() === year && date.getMonth() === 11 && date.getDate() === 25}
+{#if date.getFullYear() === year && date.getMonth() === DECEMBER && date.getDate() === 25}
 	<div id="xmas-message">
 		<h3>Merry Christmas!</h3>
 		<p>Don't bake anything today</p>
