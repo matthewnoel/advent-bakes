@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
-import { menu } from '$lib/2024';
+import { menu } from '$lib/2025';
 import type { Recipe } from '$lib/recipes';
 
 export const load: PageLoad = ({ params }) => {
