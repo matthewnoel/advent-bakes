@@ -55,161 +55,161 @@ export const ChocolateEdgedChocolateChipCookies: Recipe = {
 };
 
 export const ChocolateChipCookies: Recipe = {
-	title: '',
+	title: 'Chocolate Chip Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const DoubleChocolateChewies: Recipe = {
-	title: '',
+	title: 'Double Chocolate Chewies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const LemonIcedCookies: Recipe = {
-	title: '',
+	title: 'Lemon Iced Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const MaltedMilkChocolateCookies: Recipe = {
-	title: '',
+	title: 'Malted Milk Chocolate Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const PeanutButterCookies: Recipe = {
-	title: '',
+	title: 'Peanut Butter Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const MintMeringueWreaths: Recipe = {
-	title: '',
+	title: 'Mint Meringue Wreaths',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const CinnamonSugarPalmiers: Recipe = {
-	title: '',
+	title: 'Cinnamon Sugar Palmiers',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const CrinkleCookies: Recipe = {
-	title: '',
+	title: 'Crinkle Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const PistachioCranberryBiscotti: Recipe = {
-	title: '',
+	title: 'Pistachio Cranberry Biscotti',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const Kolacky: Recipe = {
-	title: '',
+	title: 'Kolacky',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const SwedishThumbprintCookies: Recipe = {
-	title: '',
+	title: 'Swedish Thumbprint Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const Kringles: Recipe = {
-	title: '',
+	title: 'Kringles',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const SpritzCookies: Recipe = {
-	title: '',
+	title: 'Spritz Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const CreamWafers: Recipe = {
-	title: '',
+	title: 'Cream Wafers',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const ChewyMolassesSpiceCookies: Recipe = {
-	title: '',
+	title: 'Chewy Molasses Spice Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const ShortbreadCookies: Recipe = {
-	title: '',
+	title: 'Shortbread Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const SugarCookies: Recipe = {
-	title: '',
+	title: 'Sugar Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const KissCookies: Recipe = {
-	title: '',
+	title: 'Kiss Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const SnickerdoodleCookies: Recipe = {
-	title: '',
+	title: 'Snickerdoodle Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const MeringueStars: Recipe = {
-	title: '',
+	title: 'Meringue Stars',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const CandyCaneCookies: Recipe = {
-	title: '',
+	title: 'Candy Cane Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const RudolphCookies: Recipe = {
-	title: '',
+	title: 'Rudolph Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
 };
 
 export const MonsterCookies: Recipe = {
-	title: '',
+	title: 'Monster Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
