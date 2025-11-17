@@ -22,6 +22,10 @@ Run dev server
 npm run dev
 ```
 
+# How to mock dates
+
+Inside `lib/utils.ts` there's a `getCurrentDate` function which accepts an optional `Date` parameter. You can use it to mock the current date when testing.
+
 ## How deployment works
 
 The site is built and deployed to GitHub pages with the action at `.github/workflows/pages.yml`
