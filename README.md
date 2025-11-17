@@ -1,5 +1,7 @@
 # Advent of Baking
 
+An advent endeavor for the masochistic patissier
+
 ## How to run locally
 
 Set your Node version
