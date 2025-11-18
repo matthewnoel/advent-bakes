@@ -2,6 +2,7 @@
 	import { menu } from '$lib/2025';
 </script>
 
+<h1>Plan View</h1>
 <table>
 	<thead>
 		<tr>
@@ -24,8 +25,11 @@
 </table>
 
 <style>
+	h1 {
+		text-align: center;
+	}
 	table {
-		margin: auto;
+		width: 100%;
 		border-collapse: collapse;
 		border: 2px solid black;
 	}

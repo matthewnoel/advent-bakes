@@ -17,13 +17,13 @@ import {
 	ChewyMolassesSpiceCookies,
 	ShortbreadCookies,
 	SugarCookies,
-	KissCookies,
 	SnickerdoodleCookies,
 	MeringueStars,
 	CandyCaneCookies,
 	RudolphCookies,
 	MonsterCookies,
-	type Recipe
+	type Recipe,
+	PeanutButterBlossomCookies
 } from './recipes';
 
 export type Menu = {
@@ -75,7 +75,7 @@ export const menu: Menu = {
 	'16': ChewyMolassesSpiceCookies,
 	'17': ShortbreadCookies,
 	'18': SugarCookies,
-	'19': KissCookies,
+	'19': PeanutButterBlossomCookies,
 	'20': SnickerdoodleCookies,
 	'21': MeringueStars,
 	'22': MonsterCookies,
