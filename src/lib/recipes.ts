@@ -173,8 +173,8 @@ export const SugarCookies: Recipe = {
 	estimatedCount: 0
 };
 
-export const KissCookies: Recipe = {
-	title: 'Kiss Cookies',
+export const PeanutButterBlossomCookies: Recipe = {
+	title: 'Peanut Butter Blossom Cookies',
 	ingredients: [],
 	instructions: [],
 	estimatedCount: 0
