@@ -23,32 +23,30 @@
 	<meta name="description" content={`Recipe for day "${data.day}" of advent baking.`} />
 </svelte:head>
 
-<main>
-	<h1>{data.title}</h1>
-	<h2>Day {data.day}</h2>
+<h1>{data.title}</h1>
+<h2>Day {data.day}</h2>
 
-	<p>Estimated cookie count: {data.estimatedCount}</p>
+<p>Estimated cookie count: {data.estimatedCount}</p>
 
-	<div>
-		<h3>Ingredients</h3>
-		<ul>
-			{#each data.ingredients as ingredient}
-				<li>{formatIngredient(ingredient)}</li>
-			{/each}
-		</ul>
-	</div>
+<div>
+	<h3>Ingredients</h3>
+	<ul>
+		{#each data.ingredients as ingredient}
+			<li>{formatIngredient(ingredient)}</li>
+		{/each}
+	</ul>
+</div>
 
-	<br />
+<br />
 
-	<div>
-		<h3>Instructions</h3>
-		<ol>
-			{#each data.instructions as instruction}
-				<li>{instruction}</li>
-			{/each}
-		</ol>
-	</div>
-</main>
+<div>
+	<h3>Instructions</h3>
+	<ol>
+		{#each data.instructions as instruction}
+			<li>{instruction}</li>
+		{/each}
+	</ol>
+</div>
 
 <style>
 	h1,
@@ -59,12 +57,5 @@
 
 	div {
 		border: 1px solid black;
-	}
-
-	main {
-		margin: auto;
-		max-width: 500px;
-		display: flex;
-		flex-direction: column;
 	}
 </style>
