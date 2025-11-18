@@ -1,13 +1,14 @@
 <script lang="ts">
 	let { children } = $props();
 	import { page } from '$app/state';
+	import { resolve } from '$app/paths';
 </script>
 
 <main>
 	{@render children()}
 	<nav>
 		{#if page.route.id !== '/'}
-			<a href="/">Home</a>
+			<a href={resolve('/')}>Home</a>
 		{/if}
 		<a href="https://github.com/matthewnoel/advent-bakes">Source Code</a>
 	</nav>

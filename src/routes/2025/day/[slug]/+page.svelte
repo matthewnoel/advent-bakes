@@ -31,7 +31,7 @@
 <div>
 	<h3>Ingredients</h3>
 	<ul>
-		{#each data.ingredients as ingredient}
+		{#each data.ingredients as ingredient (ingredient)}
 			<li>{formatIngredient(ingredient)}</li>
 		{/each}
 	</ul>
@@ -42,7 +42,7 @@
 <div>
 	<h3>Instructions</h3>
 	<ol>
-		{#each data.instructions as instruction}
+		{#each data.instructions as instruction (instruction)}
 			<li>{instruction}</li>
 		{/each}
 	</ol>
