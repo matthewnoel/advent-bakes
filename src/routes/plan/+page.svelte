@@ -11,7 +11,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		{#each Object.entries(menu) as [date, recipe]}
+		{#each Object.entries(menu) as [date, recipe] (date)}
 			<tr>
 				<td>{date}</td>
 				<td
