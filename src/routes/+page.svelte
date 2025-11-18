@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import { DECEMBER, getCurrentDate, isToday, isAfterToday, rowColToDay } from '$lib/utils';
 	const year = 2025;
 	// const mock = new Date(2025, 11, 20);
@@ -23,7 +23,7 @@
 
 <svelte:head>
 	<title>Advent Bakes</title>
-	<meta name="description" content={`Advent baking calendar.`} />
+	<meta name="description" content="Advent baking calendar." />
 </svelte:head>
 
 <h1>Advent Bakes</h1>
@@ -31,11 +31,11 @@
 
 <table>
 	<tbody>
-		{#each Array(4) as _, rowIndex}
+		{#each Array(4) as _, rowIndex (`r${rowIndex}`)}
 			<tr>
-				{#each Array(6) as _, colIndex}
+				{#each Array(6) as _, colIndex (`c${colIndex}`)}
 					<td style={getTdStyles(date, year, rowIndex, colIndex)}>
-						<a href="{base}/{year}/day/{rowColToDay(rowIndex, colIndex)}"
+						<a href={resolve(`/${year}/day/${rowColToDay(rowIndex, colIndex)}`)}
 							>{rowColToDay(rowIndex, colIndex)}</a
 						>
 					</td>
