@@ -9,18 +9,32 @@
 		getDaysUntilMenuStart
 	} from '$lib/utils';
 	const year = 2025;
-	const date = getCurrentDate(/* new Date(2025, 10, 30) */);
+	const date = getCurrentDate(new Date(2025, 11, 15));
 	const daysLeft = getDaysUntilMenuStart(date, year);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
 		const styles: string[] = [];
 
 		if (isToday(currentDate, year, row, col)) {
-			styles.push('border-color: red !important;');
+			styles.push('border-color: red;');
 		}
 
 		if (isAfterToday(currentDate, year, row, col)) {
-			styles.push('background-color: lightblue !important;');
+			styles.push('background-color: forestgreen;');
+		}
+
+		return styles.join(' ');
+	};
+
+	const getAnchorStyles = (currentDate: Date, year: number, row: number, col: number) => {
+		const styles: string[] = [];
+
+		if (isToday(currentDate, year, row, col)) {
+			styles.push('color: red;');
+		}
+
+		if (isAfterToday(currentDate, year, row, col)) {
+			styles.push('color: lawngreen;');
 		}
 
 		return styles.join(' ');
@@ -47,7 +61,9 @@
 			<tr>
 				{#each Array(6) as _, colIndex (`c${colIndex}`)}
 					<td style={getTdStyles(date, year, rowIndex, colIndex)}>
-						<a href={resolve(`/${year}/day/${rowColToDay(rowIndex, colIndex)}`)}
+						<a
+							href={resolve(`/${year}/day/${rowColToDay(rowIndex, colIndex)}`)}
+							style={getAnchorStyles(date, year, rowIndex, colIndex)}
 							>{rowColToDay(rowIndex, colIndex)}</a
 						>
 					</td>
