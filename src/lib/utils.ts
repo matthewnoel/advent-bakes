@@ -31,3 +31,11 @@ export const isAfterToday = (currentDate: Date, year: number, row: number, col: 
 	}
 	return currentDate.getDate() < rowColToDay(row, col);
 };
+
+export const isCurrentlyChristmasForYear = (currentDate: Date, menuYear: number) => {
+	return (
+		currentDate.getFullYear() === menuYear &&
+		currentDate.getMonth() === DECEMBER &&
+		currentDate.getDate() === 25
+	);
+};

@@ -1,10 +1,14 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { DECEMBER, getCurrentDate, isToday, isAfterToday, rowColToDay } from '$lib/utils';
+	import {
+		getCurrentDate,
+		isToday,
+		isAfterToday,
+		rowColToDay,
+		isCurrentlyChristmasForYear
+	} from '$lib/utils';
 	const year = 2025;
-	// const mock = new Date(2025, 11, 20);
-	// const date = getCurrentDate(mock);
-	const date = getCurrentDate();
+	const date = getCurrentDate(/* new Date(2025, 11, 25) */);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
 		const styles: string[] = [];
@@ -45,7 +49,7 @@
 	</tbody>
 </table>
 
-{#if date.getFullYear() === year && date.getMonth() === DECEMBER && date.getDate() === 25}
+{#if isCurrentlyChristmasForYear(date, year)}
 	<div id="xmas-message">
 		<h3>Merry Christmas!</h3>
 		<p>Don't bake anything today</p>
