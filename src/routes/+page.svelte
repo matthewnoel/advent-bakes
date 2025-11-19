@@ -5,10 +5,12 @@
 		isToday,
 		isAfterToday,
 		rowColToDay,
-		isCurrentlyChristmasForYear
+		isCurrentlyChristmasForYear,
+		getDaysUntilMenuStart
 	} from '$lib/utils';
 	const year = 2025;
-	const date = getCurrentDate(/* new Date(2025, 11, 20) */);
+	const date = getCurrentDate(/* new Date(2025, 10, 30) */);
+	const daysLeft = getDaysUntilMenuStart(date, year);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
 		const styles: string[] = [];
@@ -32,6 +34,12 @@
 
 <h1>Advent Bakes</h1>
 <h2>{year}</h2>
+
+{#if daysLeft > 0}
+	<p id="days-left">
+		{daysLeft === 1 ? `'Twas the night before...` : `${daysLeft} days until baking...`}
+	</p>
+{/if}
 
 <table>
 	<tbody>
@@ -65,6 +73,9 @@
 		text-align: center;
 		font-size: 1rem;
 		margin: 0 0 1rem 0;
+	}
+	#days-left {
+		text-align: center;
 	}
 	table {
 		margin: auto;

@@ -37,3 +37,13 @@ export const isCurrentlyChristmasForYear = (currentDate: Date, menuYear: number)
 		currentDate.getDate() === 25
 	);
 };
+
+export const getDaysUntilMenuStart = (currentDate: Date, menuYear: number) => {
+	const menuStartDate = new Date(menuYear, 11, 1);
+	const modifiedCurrentDate = new Date(currentDate);
+	menuStartDate.setHours(0, 0, 0, 0);
+	modifiedCurrentDate.setHours(0, 0, 0, 0);
+	const menuStartDateTime = menuStartDate.getTime();
+	const currentDateTime = modifiedCurrentDate.getTime();
+	return (menuStartDateTime - currentDateTime) / (1000 * 60 * 60 * 24);
+};
