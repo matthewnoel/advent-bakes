@@ -9,7 +9,7 @@
 		getDaysUntilMenuStart
 	} from '$lib/utils';
 	const year = 2025;
-	const date = getCurrentDate(new Date(2025, 11, 15));
+	const date = getCurrentDate(/* new Date(2025, 11, 15) */);
 	const daysLeft = getDaysUntilMenuStart(date, year);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
