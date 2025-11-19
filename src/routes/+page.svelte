@@ -8,7 +8,7 @@
 		isCurrentlyChristmasForYear
 	} from '$lib/utils';
 	const year = 2025;
-	const date = getCurrentDate(/* new Date(2025, 11, 25) */);
+	const date = getCurrentDate(/* new Date(2025, 11, 20) */);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
 		const styles: string[] = [];
@@ -18,7 +18,7 @@
 		}
 
 		if (isAfterToday(currentDate, year, row, col)) {
-			styles.push('background-color: grey !important;');
+			styles.push('background-color: lightblue !important;');
 		}
 
 		return styles.join(' ');

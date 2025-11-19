@@ -20,16 +20,14 @@ export const isToday = (currentDate: Date, year: number, row: number, col: numbe
 };
 
 export const isAfterToday = (currentDate: Date, year: number, row: number, col: number) => {
-	if (currentDate.getFullYear() > year) {
-		return false;
-	}
-	if (currentDate.getFullYear() < year) {
-		return true;
-	}
-	if (currentDate.getMonth() < DECEMBER) {
-		return false;
-	}
-	return currentDate.getDate() < rowColToDay(row, col);
+	const datumDate = new Date(year, 11, rowColToDay(row, col));
+	return (
+		!(
+			currentDate.getFullYear() === datumDate.getFullYear() &&
+			currentDate.getMonth() === datumDate.getMonth() &&
+			currentDate.getDate() === datumDate.getDate()
+		) && datumDate > currentDate
+	);
 };
 
 export const isCurrentlyChristmasForYear = (currentDate: Date, menuYear: number) => {
