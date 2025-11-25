@@ -54,7 +54,7 @@ export type Menu = {
 	[key: string]: Recipe;
 };
 
-export const menu: Menu = {
+const Menu2025: Menu = {
 	'1': ChocolateChipCookies,
 	'2': DoubleChocolateChewies,
 	'3': LemonIcedCookies,
@@ -79,4 +79,8 @@ export const menu: Menu = {
 	'22': MonsterCookies,
 	'23': CandyCaneCookies,
 	'24': RudolphCookies
+};
+
+export const AllMenus: Record<number, Menu> = {
+	2025: Menu2025
 };
