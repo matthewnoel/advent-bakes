@@ -1,30 +1,28 @@
-import {
-	ChocolateEdgedChocolateChipCookies,
-	ChocolateChipCookies,
-	DoubleChocolateChewies,
-	LemonIcedCookies,
-	MaltedMilkChocolateCookies,
-	PeanutButterCookies,
-	MintMeringueWreaths,
-	CinnamonSugarPalmiers,
-	CrinkleCookies,
-	PistachioCranberryBiscotti,
-	Kolacky,
-	SwedishThumbprintCookies,
-	Kringles,
-	SpritzCookies,
-	CreamWafers,
-	ChewyMolassesSpiceCookies,
-	ShortbreadCookies,
-	SugarCookies,
-	SnickerdoodleCookies,
-	MeringueStars,
-	CandyCaneCookies,
-	RudolphCookies,
-	MonsterCookies,
-	type Recipe,
-	PeanutButterBlossomCookies
-} from './recipes';
+import type { Recipe } from './recipes/types';
+import { ChocolateEdgedChocolateChipCookies } from './recipes/ChocolateEdgedChocolateChipCookies';
+import { ChocolateChipCookies } from './recipes/ChocolateChipCookies';
+import { DoubleChocolateChewies } from './recipes/DoubleChocolateChewies';
+import { LemonIcedCookies } from './recipes/LemonIcedCookies';
+import { MaltedMilkChocolateCookies } from './recipes/MaltedMilkChocolateCookies';
+import { PeanutButterCookies } from './recipes/PeanutButterCookies';
+import { MintMeringueWreaths } from './recipes/MintMeringueWreaths';
+import { CinnamonSugarPalmiers } from './recipes/CinnamonSugarPalmiers';
+import { CrinkleCookies } from './recipes/CrinkleCookies';
+import { PistachioCranberryBiscotti } from './recipes/PistachioCranberryBiscotti';
+import { Kolacky } from './recipes/Kolacky';
+import { SwedishThumbprintCookies } from './recipes/SwedishThumbprintCookies';
+import { Kringles } from './recipes/Kringles';
+import { SpritzCookies } from './recipes/SpritzCookies';
+import { CreamWafers } from './recipes/CreamWafers';
+import { ChewyMolassesSpiceCookies } from './recipes/ChewyMolassesSpiceCookies';
+import { ShortbreadCookies } from './recipes/ShortbreadCookies';
+import { SugarCookies } from './recipes/SugarCookies';
+import { SnickerdoodleCookies } from './recipes/SnickerdoodleCookies';
+import { MeringueStars } from './recipes/MeringueStars';
+import { CandyCaneCookies } from './recipes/CandyCaneCookies';
+import { RudolphCookies } from './recipes/RudolphCookies';
+import { MonsterCookies } from './recipes/MonsterCookies';
+import { PeanutButterBlossomCookies } from './recipes/PeanutButterBlossomCookies';
 
 export type Menu = {
 	[key in
