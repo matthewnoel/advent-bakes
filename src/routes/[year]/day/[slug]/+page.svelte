@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { Ingredient } from '$lib/recipes';
+	import type { Ingredient } from '$lib/recipes/types';
 
 	let { data }: { data: PageData } = $props();
 

@@ -8,7 +8,10 @@
 		isCurrentlyChristmasForYear,
 		getDaysUntilMenuStart
 	} from '$lib/utils';
-	const year = 2025;
+	import { AllMenus } from '$lib/menus';
+	const year = Object.keys(AllMenus)
+		.map(Number)
+		.sort((a, b) => b - a)[0];
 	const date = getCurrentDate(/* new Date(2025, 11, 15) */);
 	const daysLeft = getDaysUntilMenuStart(date, year);
 
