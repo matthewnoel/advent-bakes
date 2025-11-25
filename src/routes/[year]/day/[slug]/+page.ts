@@ -4,7 +4,12 @@ import { AllMenus } from '$lib/menus';
 import type { Recipe } from '$lib/recipes/types';
 
 export const load: PageLoad = ({ params }) => {
-	const recipe: Recipe = AllMenus[2025][params.slug];
+	const year = Number(params.year);
+	const menu = AllMenus[year];
+	if (!menu) {
+		error(404, 'Year not found');
+	}
+	const recipe: Recipe = menu[params.slug];
 	if (!recipe) {
 		error(404, 'Not found');
 	}
