@@ -59,7 +59,7 @@ export const ChocolateChipCookies: Recipe = {
 		'Stir in chocolate chips',
 		'Place on ungreased baking sheets and bake until golden brown (approximately 9 minutes)'
 	],
-	estimatedCount: 60,
+	estimatedCount: 52,
 	source: RecipeSource.GrandmaCarol,
 	isComplete: true
 };

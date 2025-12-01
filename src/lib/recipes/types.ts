@@ -1,5 +1,6 @@
 export enum RecipeSource {
-	GrandmaCarol = 'Grandma Carol'
+	GrandmaCarol = 'Grandma Carol',
+	CookieAdventBook = 'Cookie Advent Book | ISBN 978-1-4521-5566-1'
 }
 
 export type Recipe = {
