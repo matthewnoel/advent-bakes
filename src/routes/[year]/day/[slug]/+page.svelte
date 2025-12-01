@@ -27,11 +27,13 @@
 <h2>Day {data.day}</h2>
 
 {#if data.isComplete}
-	<p>Estimated cookie count: {data.estimatedCount}</p>
+	<div id="header">
+		<p>Estimated cookie count: {data.estimatedCount}</p>
 
-	{#if data?.source}
-		<p>Source: {data.source}</p>
-	{/if}
+		{#if data?.source}
+			<p>Source: {data.source}</p>
+		{/if}
+	</div>
 
 	<div>
 		<h3>Ingredients</h3>
@@ -61,6 +63,16 @@
 	h2,
 	h3 {
 		text-align: center;
+	}
+
+	#header {
+		border: none;
+		padding-bottom: 1rem;
+	}
+
+	#header > p {
+		margin: 0;
+		padding: 0;
 	}
 
 	div {
