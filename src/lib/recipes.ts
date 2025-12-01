@@ -94,6 +94,7 @@ export const ChocolateChipCookies: Recipe = {
 			quantity: 2
 		}
 	],
+	instructions: [],
 	estimatedCount: 0
 };
 
