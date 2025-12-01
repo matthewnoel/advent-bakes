@@ -4,6 +4,7 @@ export type Recipe = {
 	instructions: string[];
 	estimatedCount: number;
 	source?: string;
+	complete?: boolean;
 };
 
 export type Mass = {
@@ -88,11 +89,20 @@ export const ChocolateChipCookies: Recipe = {
 			value: 'granulated sugar',
 			grams: 170
 		},
-		// TODO: brown sugar
+		{
+			type: 'mass',
+			value: 'light brown sugar',
+			grams: 160
+		},
 		{
 			type: 'countable',
 			value: 'eggs',
 			quantity: 2
+		},
+		{
+			type: 'volume',
+			value: 'vanilla extract',
+			milliliters: 5
 		}
 	],
 	instructions: [
@@ -105,7 +115,8 @@ export const ChocolateChipCookies: Recipe = {
 		'Place on ungreased baking sheets and bake until golden brown (approximately 9 to 11 minutes)'
 	],
 	estimatedCount: 60,
-	source: 'Carol'
+	source: 'Carol',
+	complete: true
 };
 
 // modified from c.a.b
