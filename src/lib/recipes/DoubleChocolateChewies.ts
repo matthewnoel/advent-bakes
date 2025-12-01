@@ -1,4 +1,4 @@
-import type { Recipe } from './types';
+import { RecipeSource, type Recipe } from './types';
 
 // modified from c.a.b
 export const DoubleChocolateChewies: Recipe = {
@@ -14,7 +14,11 @@ export const DoubleChocolateChewies: Recipe = {
 			value: 'unsweetened cocoa powder',
 			grams: 60
 		},
-		// TODO: 1/4 tsp salt to mass
+		{
+			type: 'mass',
+			value: 'salt',
+			grams: 1
+		},
 		{
 			type: 'countable',
 			value: 'egg whites',
@@ -40,5 +44,7 @@ export const DoubleChocolateChewies: Recipe = {
 		'Line your baking sheets with parchment paper and portion the dough on them',
 		'Bake for 10-12 minutes until the tops are barely firm to the touch and have not begun to darken'
 	],
-	estimatedCount: 32
+	estimatedCount: 32,
+	source: RecipeSource.CookieAdventBook,
+	isComplete: true
 };
