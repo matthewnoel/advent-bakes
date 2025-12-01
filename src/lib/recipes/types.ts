@@ -3,6 +3,8 @@ export type Recipe = {
 	ingredients: Ingredient[];
 	instructions: string[];
 	estimatedCount: number;
+	source?: string;
+	isComplete?: boolean;
 };
 
 export type Mass = {

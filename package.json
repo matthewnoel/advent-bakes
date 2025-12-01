@@ -7,6 +7,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"pre": "npm run format && npm run lint && npm run check",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
