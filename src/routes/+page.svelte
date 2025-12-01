@@ -12,7 +12,7 @@
 	const year = Object.keys(AllMenus)
 		.map(Number)
 		.sort((a, b) => b - a)[0];
-	const date = getCurrentDate(new Date(2025, 11, 5));
+	const date = getCurrentDate(/* new Date(2025, 11, 5) */);
 	const daysLeft = getDaysUntilMenuStart(date, year);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {

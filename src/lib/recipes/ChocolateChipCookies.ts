@@ -57,7 +57,7 @@ export const ChocolateChipCookies: Recipe = {
 		'Add eggs one at a time, beating after each',
 		'Gradually beat in flour mixture',
 		'Stir in chocolate chips',
-		'Place on ungreased baking sheets and bake until golden brown (approximately 9 to 11 minutes)'
+		'Place on ungreased baking sheets and bake until golden brown (approximately 9 minutes)'
 	],
 	estimatedCount: 60,
 	source: RecipeSource.GrandmaCarol,
