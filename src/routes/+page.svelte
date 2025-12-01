@@ -8,8 +8,11 @@
 		isCurrentlyChristmasForYear,
 		getDaysUntilMenuStart
 	} from '$lib/utils';
-	const year = 2025;
-	const date = getCurrentDate(/* new Date(2025, 11, 15) */);
+	import { AllMenus } from '$lib/menus';
+	const year = Object.keys(AllMenus)
+		.map(Number)
+		.sort((a, b) => b - a)[0];
+	const date = getCurrentDate(new Date(2025, 11, 5));
 	const daysLeft = getDaysUntilMenuStart(date, year);
 
 	const getTdStyles = (currentDate: Date, year: number, row: number, col: number) => {
@@ -20,7 +23,7 @@
 		}
 
 		if (isAfterToday(currentDate, year, row, col)) {
-			styles.push('background-color: forestgreen;');
+			styles.push('background-color: snow;');
 		}
 
 		return styles.join(' ');
@@ -34,7 +37,7 @@
 		}
 
 		if (isAfterToday(currentDate, year, row, col)) {
-			styles.push('color: lawngreen;');
+			styles.push('color: grey;');
 		}
 
 		return styles.join(' ');

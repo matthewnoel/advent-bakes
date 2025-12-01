@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { Ingredient } from '$lib/recipes';
+	import type { Ingredient } from '$lib/recipes/types';
 
 	let { data }: { data: PageData } = $props();
 
@@ -26,27 +26,35 @@
 <h1>{data.title}</h1>
 <h2>Day {data.day}</h2>
 
-<p>Estimated cookie count: {data.estimatedCount}</p>
+{#if data.isComplete}
+	<p>Estimated cookie count: {data.estimatedCount}</p>
 
-<div>
-	<h3>Ingredients</h3>
-	<ul>
-		{#each data.ingredients as ingredient (ingredient)}
-			<li>{formatIngredient(ingredient)}</li>
-		{/each}
-	</ul>
-</div>
+	{#if data?.source}
+		<p>Source: {data.source}</p>
+	{/if}
 
-<br />
+	<div>
+		<h3>Ingredients</h3>
+		<ul>
+			{#each data.ingredients as ingredient (ingredient)}
+				<li>{formatIngredient(ingredient)}</li>
+			{/each}
+		</ul>
+	</div>
 
-<div>
-	<h3>Instructions</h3>
-	<ol>
-		{#each data.instructions as instruction (instruction)}
-			<li>{instruction}</li>
-		{/each}
-	</ol>
-</div>
+	<br />
+
+	<div>
+		<h3>Instructions</h3>
+		<ol>
+			{#each data.instructions as instruction (instruction)}
+				<li>{instruction}</li>
+			{/each}
+		</ol>
+	</div>
+{:else}
+	<p>Recipe not complete -- check back later or peek at the code</p>
+{/if}
 
 <style>
 	h1,
