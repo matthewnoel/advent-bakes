@@ -1,9 +1,13 @@
+export enum RecipeSource {
+	GrandmaCarol = 'Grandma Carol'
+}
+
 export type Recipe = {
 	title: string;
 	ingredients: Ingredient[];
 	instructions: string[];
 	estimatedCount: number;
-	source?: string;
+	source?: RecipeSource;
 	isComplete?: boolean;
 };
 
