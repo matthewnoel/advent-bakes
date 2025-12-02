@@ -1,4 +1,4 @@
-import { RecipeSource, type Recipe } from './types';
+import { Sources, type Recipe } from './types';
 
 // modified from c.a.b
 export const DoubleChocolateChewies: Recipe = {
@@ -45,6 +45,6 @@ export const DoubleChocolateChewies: Recipe = {
 		'Bake for 10-12 minutes until the tops are barely firm to the touch and have not begun to darken'
 	],
 	estimatedCount: 32,
-	source: RecipeSource.CookieAdventBook,
+	source: { value: Sources.CookieAdventBook, isModified: true },
 	isComplete: true
 };

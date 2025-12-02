@@ -1,5 +1,5 @@
 import type { Recipe } from './types';
-import { RecipeSource } from './types';
+import { Sources } from './types';
 
 export const ChocolateChipCookies: Recipe = {
 	title: 'Chocolate Chip Cookies',
@@ -60,6 +60,6 @@ export const ChocolateChipCookies: Recipe = {
 		'Place on ungreased baking sheets and bake until golden brown (approximately 9 minutes)'
 	],
 	estimatedCount: 52,
-	source: RecipeSource.GrandmaCarol,
+	source: { value: Sources.GrandmaCarol },
 	isComplete: true
 };

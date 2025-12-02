@@ -1,7 +1,12 @@
-export enum RecipeSource {
+export enum Sources {
 	GrandmaCarol = 'Grandma Carol',
 	CookieAdventBook = 'Cookie Advent Book | ISBN 978-1-4521-5566-1'
 }
+
+type RecipeSource = {
+	value: Sources;
+	isModified?: boolean;
+};
 
 export type Recipe = {
 	title: string;
