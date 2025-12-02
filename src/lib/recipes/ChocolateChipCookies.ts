@@ -51,7 +51,7 @@ export const ChocolateChipCookies: Recipe = {
 		}
 	],
 	instructions: [
-		'Preheat oven to 375F',
+		'Preheat oven to 375°F',
 		'Combine flour, baking soda, and salt in a bowl',
 		'Beat butter, granulated sugar, brown sugar, and vanilla extract in a mixer until creamy',
 		'Add eggs one at a time, beating after each',
