@@ -38,7 +38,7 @@ export const DoubleChocolateChewies: Recipe = {
 	instructions: [
 		'Preheat oven to 350F',
 		'Sift together the powdered sugar, cocoa powder, and salt',
-		'Beat egg whites one at a time into the sugar mixture on high. Beat for about 4 minutes until there is a soft dough',
+		'Beat egg whites one at a time into the sugar mixture on high. Beat for about 4 minutes until there is a soft dough. If the dough does not stiffen while mixing, cover and freeze for 20 minutes.',
 		'Beat in the vanilla',
 		'Stir in the chocolate chips',
 		'Line your baking sheets with parchment paper and portion the dough on them',
