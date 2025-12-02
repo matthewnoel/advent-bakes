@@ -1,5 +1,5 @@
 import type { Recipe } from './types';
-import { RecipeSource } from './types';
+import { Sources } from './types';
 
 export const ChocolateChipCookies: Recipe = {
 	title: 'Chocolate Chip Cookies',
@@ -51,7 +51,7 @@ export const ChocolateChipCookies: Recipe = {
 		}
 	],
 	instructions: [
-		'Preheat oven to 375F',
+		'Preheat oven to 375°F',
 		'Combine flour, baking soda, and salt in a bowl',
 		'Beat butter, granulated sugar, brown sugar, and vanilla extract in a mixer until creamy',
 		'Add eggs one at a time, beating after each',
@@ -60,6 +60,6 @@ export const ChocolateChipCookies: Recipe = {
 		'Place on ungreased baking sheets and bake until golden brown (approximately 9 minutes)'
 	],
 	estimatedCount: 52,
-	source: RecipeSource.GrandmaCarol,
+	source: { value: Sources.GrandmaCarol },
 	isComplete: true
 };

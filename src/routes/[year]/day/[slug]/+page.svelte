@@ -31,7 +31,11 @@
 		<p>Estimated cookie count: {data.estimatedCount}</p>
 
 		{#if data?.source}
-			<p>Source: {data.source}</p>
+			{#if data.source.isModified}
+				<p>Modified from: {data.source.value}</p>
+			{:else}
+				<p>Source: {data.source.value}</p>
+			{/if}
 		{/if}
 	</div>
 

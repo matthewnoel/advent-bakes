@@ -34,7 +34,7 @@ export const LemonIcedCookies: Recipe = {
 		// TODO: optional jelly bean garnish?
 	],
 	instructions: [
-		'Preheat the oven to 375F',
+		'Preheat the oven to 375°F',
 		'Whisk together flour, baking soda, and salt',
 		'Beat the butter and sugar on medium for about 2 minutes until light',
 		'Beat in the egg and lemon juice',

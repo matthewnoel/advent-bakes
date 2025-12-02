@@ -1,4 +1,4 @@
-import { RecipeSource, type Recipe } from './types';
+import { Sources, type Recipe } from './types';
 
 // modified from c.a.b
 export const DoubleChocolateChewies: Recipe = {
@@ -36,15 +36,15 @@ export const DoubleChocolateChewies: Recipe = {
 		}
 	],
 	instructions: [
-		'Preheat oven to 350F',
+		'Preheat oven to 350°F',
 		'Sift together the powdered sugar, cocoa powder, and salt',
-		'Beat egg whites one at a time into the sugar mixture on high. Beat for about 4 minutes until there is a soft dough',
+		'Beat egg whites one at a time into the sugar mixture on high. Beat for about 4 minutes until there is a soft dough. If the dough does not stiffen while mixing, cover and freeze for 20 minutes.',
 		'Beat in the vanilla',
 		'Stir in the chocolate chips',
 		'Line your baking sheets with parchment paper and portion the dough on them',
 		'Bake for 10-12 minutes until the tops are barely firm to the touch and have not begun to darken'
 	],
 	estimatedCount: 32,
-	source: RecipeSource.CookieAdventBook,
+	source: { value: Sources.CookieAdventBook, isModified: true },
 	isComplete: true
 };
