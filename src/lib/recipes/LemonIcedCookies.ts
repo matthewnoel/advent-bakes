@@ -37,9 +37,8 @@ export const LemonIcedCookies: Recipe = {
 		{
 			type: 'volume',
 			value: 'fresh lemon juice',
-			milliliters: 50
+			milliliters: 80
 		},
-		// started with 332g of lemon juice
 		{
 			type: 'countable',
 			value: 'zest of a lemon',

@@ -26,5 +26,5 @@ export const ChocolateEdgedChocolateChipCookies: Recipe = {
 		'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
 		'Ut enim ad minim veniam'
 	],
-	estimatedCount: 32
+	estimatedCount: 35
 };
