@@ -1,4 +1,4 @@
-import type { Recipe } from './types';
+import { Sources, type Recipe } from './types';
 
 // c.a.b
 export const LemonIcedCookies: Recipe = {
@@ -9,8 +9,16 @@ export const LemonIcedCookies: Recipe = {
 			value: 'all purpose flour',
 			grams: 420
 		},
-		// TODO: 1/2 tsp baking soda to mass
-		// TODO: 1/2 tsp salt to mass
+		{
+			type: 'mass',
+			value: 'baking soda',
+			grams: 3
+		},
+		{
+			type: 'mass',
+			value: 'salt',
+			grams: 3
+		},
 		{
 			type: 'mass',
 			value: 'room temp unsalted butter',
@@ -30,20 +38,31 @@ export const LemonIcedCookies: Recipe = {
 			type: 'volume',
 			value: 'fresh lemon juice',
 			milliliters: 50
+		},
+		// started with 332g of lemon juice
+		{
+			type: 'countable',
+			value: 'zest of a lemon',
+			quantity: 2
 		}
-		// TODO: optional jelly bean garnish?
 	],
 	instructions: [
+		// TODO: the lemon juice here is used in two different steps. Seems odd to say 'use N% of the juice', so figure out some interpolation
 		'Preheat the oven to 375°F',
 		'Whisk together flour, baking soda, and salt',
-		'Beat the butter and sugar on medium for about 2 minutes until light',
-		'Beat in the egg and lemon juice',
+		'Beat the butter, sugar, and lemon zest on medium for about 2 minutes until light',
+		'Beat in the egg and half of the lemon juice',
 		'Gradually beat in the flour on low. Stop once mixed and the dough is smooth but slightly stiff.',
 		'Portion dough onto baking sheets and flatten tops with a greased glass',
 		'Bake for approximately 10 minutes until firm and golden brown',
 		'Rest cookies before icing',
-		'Make the icing by sifting the powdered sugar and whisking in lemon juice until smooth',
+		'Make the icing by sifting the powdered sugar and whisking in the rest of the lemon juice until smooth',
 		'Spread icing over each cookie and let the icing dry'
 	],
-	estimatedCount: 34
+	estimatedCount: 34,
+	source: {
+		value: Sources.CookieAdventBook,
+		isModified: true
+	},
+	isComplete: true
 };
