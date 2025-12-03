@@ -59,7 +59,7 @@
 		</ol>
 	</div>
 {:else}
-	<p>Recipe not complete -- check back later or peek at the code</p>
+	<p>Recipe not complete -- check back later, peek at the code, or just ask Matthew</p>
 {/if}
 
 <style>
