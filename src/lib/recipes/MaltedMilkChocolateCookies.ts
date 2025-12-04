@@ -56,7 +56,7 @@ export const MaltedMilkChocolateCookies: Recipe = {
 		'Melt chocolate and stir in vegetable oil to create the coating',
 		'Dip each cookie to cover the top and temporarily refrigerate to aid the hardening process if necessary'
 	],
-	estimatedCount: 28,
+	estimatedCount: 30,
 	source: {
 		value: Sources.CookieAdventBook,
 		isModified: true
