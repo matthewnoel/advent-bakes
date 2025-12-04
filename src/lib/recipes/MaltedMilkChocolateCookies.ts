@@ -49,10 +49,17 @@ export const MaltedMilkChocolateCookies: Recipe = {
 			milliliters: 5
 		}
 	],
-	instructions: [],
-	estimatedCount: 48,
+	instructions: [
+		'Preheat oven to 350° F',
+		'On medium, beat together the butter and sugar until light (approximately 2-3 minutes) followed by the egg, vanilla, malted milk powder, and salt. Then, on low, gradually beat in the flour until mixed into a stiff dough.',
+		'Roll the dough into balls and bake until set (approximately 12 minutes) then let rest for 2 minutes before transferring to wire racks to cool.',
+		'Melt chocolate and stir in vegetable oil to create the coating',
+		'Dip each cookie to cover the top and temporarily refrigerate to aid the hardening process if necessary'
+	],
+	estimatedCount: 28,
 	source: {
-		value: Sources.CookieAdventBook
+		value: Sources.CookieAdventBook,
+		isModified: true
 	},
 	isComplete: true
 };
