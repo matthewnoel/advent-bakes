@@ -41,7 +41,7 @@ export const CrinkleCookies: Recipe = {
 		{
 			type: 'mass',
 			value: 'sifted powdered sugar',
-			grams: 125
+			grams: 115
 		}
 	],
 	instructions: [
