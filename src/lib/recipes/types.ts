@@ -14,7 +14,7 @@ export type Recipe = {
 	instructions: string[];
 	estimatedCount: number;
 	source?: RecipeSource;
-	isComplete?: boolean;
+	isPublished?: boolean;
 };
 
 export type Mass = {

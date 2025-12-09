@@ -63,5 +63,5 @@ export const LemonIcedCookies: Recipe = {
 		value: Sources.CookieAdventBook,
 		isModified: true
 	},
-	isComplete: true
+	isPublished: true
 };
