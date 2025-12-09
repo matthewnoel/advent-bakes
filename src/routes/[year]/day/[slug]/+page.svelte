@@ -26,7 +26,7 @@
 <h1>{data.title}</h1>
 <h2>Day {data.day}</h2>
 
-{#if data.isComplete}
+{#if data.isPublished}
 	<div id="header">
 		<p>Estimated cookie count: {data.estimatedCount}</p>
 
@@ -59,7 +59,7 @@
 		</ol>
 	</div>
 {:else}
-	<p>Recipe not complete -- check back later, peek at the code, or just ask Matthew</p>
+	<p>Recipe not published -- check back later, peek at the code, or just ask Matthew</p>
 {/if}
 
 <style>

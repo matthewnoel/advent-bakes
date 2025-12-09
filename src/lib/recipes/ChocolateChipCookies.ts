@@ -61,5 +61,5 @@ export const ChocolateChipCookies: Recipe = {
 	],
 	estimatedCount: 52,
 	source: { value: Sources.GrandmaCarol },
-	isComplete: true
+	isPublished: true
 };

@@ -61,5 +61,5 @@ export const PeanutButterCookies: Recipe = {
 	source: {
 		value: Sources.GrandmaCarol
 	},
-	isComplete: true
+	isPublished: true
 };

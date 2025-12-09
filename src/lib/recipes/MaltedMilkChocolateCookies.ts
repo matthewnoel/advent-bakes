@@ -61,5 +61,5 @@ export const MaltedMilkChocolateCookies: Recipe = {
 		value: Sources.CookieAdventBook,
 		isModified: true
 	},
-	isComplete: true
+	isPublished: true
 };

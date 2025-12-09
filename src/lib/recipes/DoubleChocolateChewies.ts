@@ -45,5 +45,5 @@ export const DoubleChocolateChewies: Recipe = {
 	],
 	estimatedCount: 50,
 	source: { value: Sources.CookieAdventBook, isModified: true },
-	isComplete: true
+	isPublished: true
 };
