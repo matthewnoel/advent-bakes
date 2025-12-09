@@ -53,7 +53,7 @@ export const CrinkleCookies: Recipe = {
 		'Roll dough into balls, roll the balls in powdered sugar, then place on lightly greased cookie sheets.',
 		'Bake until tops are firm and cracked (approximately 12 to 15 minutes) then let cool on cookie sheets for 2 minutes before fully cooling on racks.'
 	],
-	estimatedCount: 42,
+	estimatedCount: 40,
 	source: {
 		value: Sources.CookieAdventBook,
 		isModified: true
