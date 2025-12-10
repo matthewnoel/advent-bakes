@@ -64,7 +64,7 @@ const Menu2025: Menu = {
 	'7': MintMeringueWreaths,
 	'8': SnickerdoodleCookies,
 	'9': CrinkleCookies,
-	'10': PistachioCranberryBiscotti,
+	'10': MeringueStars,
 	'11': Kolacky,
 	'12': SwedishThumbprintCookies,
 	'13': Kringles,
@@ -75,7 +75,7 @@ const Menu2025: Menu = {
 	'18': SugarCookies,
 	'19': PeanutButterBlossomCookies,
 	'20': CinnamonSugarPalmiers,
-	'21': MeringueStars,
+	'21': PistachioCranberryBiscotti,
 	'22': MonsterCookies,
 	'23': CandyCaneCookies,
 	'24': RudolphCookies
