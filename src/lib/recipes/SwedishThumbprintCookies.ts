@@ -47,7 +47,7 @@ export const SwedishThumbprintCookies: Recipe = {
 			type: 'mass',
 			value: 'lingonberry jam',
 			grams: 100
-		},
+		}
 	],
 	instructions: [
 		'Preheat oven to 350° F',
