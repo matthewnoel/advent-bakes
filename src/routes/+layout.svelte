@@ -1,8 +1,27 @@
 <script lang="ts">
 	let { children } = $props();
+	import { onMount } from 'svelte';
 	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
+	import { pwaInfo } from 'virtual:pwa-info';
+
+	onMount(async () => {
+		if (pwaInfo) {
+			const { registerSW } = await import('virtual:pwa-register');
+			registerSW({ immediate: true });
+		}
+	});
 </script>
+
+<svelte:head>
+	{#if pwaInfo}
+		<link
+			rel="manifest"
+			href={pwaInfo.webManifest.href}
+			crossorigin={pwaInfo.webManifest.useCredentials ? 'use-credentials' : undefined}
+		/>
+	{/if}
+</svelte:head>
 
 <main>
 	{@render children()}
